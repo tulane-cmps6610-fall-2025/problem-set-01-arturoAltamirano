@@ -25,15 +25,19 @@ def foo(a, b):
 
 def longest_run(mylist, key):
     counters = []
+    #iterate by index to access individual elements
     for x in range(len(mylist)):
 
+        #increment a counter and lazily append every match increment to the list
         if mylist[x] == key:
             counter += 1
             counters.append(counter)
 
+        #streaks been broken so reset to 0 
         else:
             counter = 0
 
+    #just return the highest count we reached
     return max(counters)
 
 
