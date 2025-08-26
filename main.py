@@ -4,13 +4,37 @@ See problemset-01.pdf for details.
 """
 # no imports needed.
 
-def foo(x):
-    ### TODO
-    pass
+def foo(a, b):
+    if a == 0:
+        #print("a = 0")
+        return int(b)
+    
+    elif b == 0: 
+        #print("b = 0")
+        return int(a)
+    
+    else:
+        #let (x,y) = (min(a,b), max(a,b))
+        (x,y) = (min(a,b), max(a,b))
+
+        #print(x,y)
+
+        #recursive call, need to use return
+        return foo(y, y % x)
+    
 
 def longest_run(mylist, key):
-    ### TODO
-    pass
+    counters = []
+    for x in range(len(mylist)):
+
+        if mylist[x] == key:
+            counter += 1
+            counters.append(counter)
+
+        else:
+            counter = 0
+
+    return max(counters)
 
 
 class Result:
