@@ -1,7 +1,7 @@
   # CMPS 6610 Problem Set 01
 ## Answers
 
-**Name:**_________________________
+**Name:**___Arturo Altamirano_____
 **Name:**_________________________
 
 
@@ -9,25 +9,40 @@ Place all written answers from `assignment-01.md` here for easier grading.
 
 1. **Asymptotic notation**
 
-  - 1b    
+  - 1a    True, c = 2, n = 1, true for all n > 1
  
-  - 1c
+  - 1b    False, c = 1, n = 1, true for all n > 1
+          The base 2 value in 2 ^ (2 ^ n) will always make this algorithm less efficient than simply 2 ^ n so it will instead dominante the other. 
 
-  - 1d
+  - 1c    c = 1, n = 1, true for all n > 1
+          because logarithmic time is always dominated by polynomial time
+          log is O(polynomial time)
 
-  - 1e
+  - 1d    True, n ^ 1.01 = Ω(log ^ 2 n)
+          because logarithmic time is always dominated by polynomial time
+          log is O(polynomial time)
 
-  - 1f
+  - 1e    c = 2, n = 8, true for all n > 8
 
-  - 1g
+  - 1f    
+
+  - 1g  
 
 2. **SPARC to Python**
 
-  - 2b
+  - 2b 
+       1) At the start of each invocation, if either input is equivalent to 0, return the counterpart input among the pair of (a, b) - evaluating them in the order of input a, then input b. 
+       
+       2) Else if neither input is 0, assign the lesser value to variable x, and the greater to variable y. 
+       
+       3) Pass (x,y) to a recursive invocation of Foo (step 1 - self), with variable a mapped to variable y, and variable b mapped to the result of variable y mod variable x. 
+
+  - 2c O(sqrt n) 
 
 3. **Parallelism and recursion**
 
-  - 3b
+  - 3b O(n) for both work and span. As you need to recur at most as
+       much as the size of your input. 
 
   - 3d
 
