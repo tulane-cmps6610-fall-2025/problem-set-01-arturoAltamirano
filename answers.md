@@ -24,7 +24,8 @@ Place all written answers from `assignment-01.md` here for easier grading.
 
   - 1e    c = 2, n = 8, true for all n > 8
 
-  - 1f    
+  - 1f    True, at n >= 81 for c = 2, sqrt(n) will always  
+          be at least (log ^ 3 n) runtime and can be said to be of omega order.
 
   - 1g  
 
