@@ -1,7 +1,7 @@
   # CMPS 6610 Problem Set 01
 ## Answers
 
-**Name:**___Arturo Altamirano_____
+**Name:** Arturo Altamirano
 **Name:**_________________________
 
 
@@ -12,8 +12,10 @@ Place all written answers from `assignment-01.md` here for easier grading.
   - 1a    True, c = 2, n = 1, true for all n > 1
  
   - 1b    False, c = 2, n = 1, true for all n > 1
+  - 1b    False, c = 2, n = 1, true for all n > 1
           The base 2 value in 2 ^ (2 ^ n) will always make this algorithm less efficient than simply 2 ^ n so it will instead dominante the other. 
 
+  - 1c    c = 5, n = 1, true for all n > 0
   - 1c    c = 5, n = 1, true for all n > 0
           because logarithmic time is always dominated by polynomial time
           log is O(polynomial time)
@@ -27,7 +29,12 @@ Place all written answers from `assignment-01.md` here for easier grading.
   - 1f    True, at n >= 81 for c = 2, sqrt(n) will always  
           be at least (log ^ 3 n) runtime and can be said to be of omega order.
 
-  - 1g  
+  - 1g    There exists no values where o(g(n)) ∩ ω(g(n)) since a given n cannot be
+          both greater and lesser than c and hold the inequality of g(n) ≤ c ·f(n) or g(n) >= c ·f(n)
+          
+          Given the example problem of 10x ∈ o(x2), past the value n = 10, there is no c large enough to unequivically dominate the gap between the 2 functions, meaning that for significant n, there exists no c which inherently causes x^2 to NOT dominate 10x
+
+          Even if given c = 1, n = 11 still yields dominance, and the inverse for ω(g(n)) with g(n) >= c ·f(n), even if given c = 1, n = 11 will still yeild inverse-dominance. There is no overlap.
 
 2. **SPARC to Python**
 
@@ -42,8 +49,8 @@ Place all written answers from `assignment-01.md` here for easier grading.
 
 3. **Parallelism and recursion**
 
-  - 3b O(log n) for both work and span. As you need to recur   at most as much as the size of your input. 
+  - 3b O(n)
 
-  - 3d 
+  - 3d O(log n) for both work and span. As you need to recur   at most as much as the size of your input. 
 
   - 3e
