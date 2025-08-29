@@ -12,10 +12,8 @@ Place all written answers from `assignment-01.md` here for easier grading.
   - 1a    True, c = 2, n = 1, true for all n > 1
  
   - 1b    False, c = 2, n = 1, true for all n > 1
-  - 1b    False, c = 2, n = 1, true for all n > 1
           The base 2 value in 2 ^ (2 ^ n) will always make this algorithm less efficient than simply 2 ^ n so it will instead dominante the other. 
 
-  - 1c    c = 5, n = 1, true for all n > 0
   - 1c    c = 5, n = 1, true for all n > 0
           because logarithmic time is always dominated by polynomial time
           log is O(polynomial time)

@@ -22,7 +22,10 @@ def foo(a, b):
         #recursive call, need to use return
         return foo(y, y % x)
     
-
+#returned_value = foo(1, 2)
+def test_foo():
+    assert foo(1,2)
+    
 def longest_run(mylist, key):
     counters = []
     #iterate by index to access individual elements
