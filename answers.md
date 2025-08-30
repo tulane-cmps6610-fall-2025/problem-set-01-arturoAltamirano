@@ -53,7 +53,6 @@ Place all written answers from `assignment-01.md` here for easier grading.
 
   - 3b O(n)
 
-  - 3d O(log n) for both work and span. As you need to recur at most as
-    much as the size of your input. 
+  - 3d O(log n) ** 2 for both work and span. As you need to recur at most as much as the size of your input.
 
-  - 3e
+  - 3e O(log n) for both work and span (??)
