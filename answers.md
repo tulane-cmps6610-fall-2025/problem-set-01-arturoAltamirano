@@ -31,7 +31,7 @@ Place all written answers from `assignment-01.md` here for easier grading.
           This sqrt will be dominated by this particular logarithmic operation. 
 
   - 1g    There exists no values where o(g(n)) ∩ ω(g(n)) since a given n
-          cannot be both greater and lesser than c and hold the inequality of g(n) ≤ c ·f(n) or g(n) >= c ·f(n)
+          cannot be both greater and lesser than c and hold the inequality of g(n) ≤ c ·f(n) or g(n) >= c ·f(n). There is no overlap.
           
           Given the example problem of 10x ∈ o(x2), past the value n = 10, there is no c large enough to unequivically dominate the gap between the 2 functions, meaning that for significant n, there exists no c which inherently causes x^2 to NOT dominate 10x
 
