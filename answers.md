@@ -2,7 +2,6 @@
 ## Answers
 
 **Name:** Arturo Altamirano
-**Name:**_________________________
 
 
 Place all written answers from `assignment-01.md` here for easier grading.
