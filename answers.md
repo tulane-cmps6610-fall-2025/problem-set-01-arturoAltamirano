@@ -22,7 +22,7 @@ Place all written answers from `assignment-01.md` here for easier grading.
   - 1d    True, n ^ 1.01 = Ω(log ^ 2 n)
 
           Because logarithmic time is always dominated by polynomial time
-          log is O(polynomial time) and polynomial time is Θ(logarithmic time)
+          log is O(polynomial time)
 
   - 1e    c = 9, n = 81, true for all n >= 81
 
@@ -46,7 +46,8 @@ Place all written answers from `assignment-01.md` here for easier grading.
        
          3) Pass (x,y) to a recursive invocation of Foo (step 1 - self), with variable a mapped to variable y, and variable b mapped to the result of variable y mod variable x. 
 
-  - 2c O(n) for both work and span
+  - 2c O(n log n) seems to be the upper bound for both work and span (see testingSolutions)
+        O(log n) ^ 2 seems to be a safer answer. As n log n seems to be close to equivalent.
 
 3. **Parallelism and recursion**
 
