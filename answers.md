@@ -51,8 +51,8 @@ Place all written answers from `assignment-01.md` here for easier grading.
 
 3. **Parallelism and recursion**
 
-  - 3b O(n)
+  - 3b O(log n) ^ 2 as that is the nearest function it dominates, it is Ω(n log n)
 
-  - 3d ~O(n) for both work and span. As you need to recur at most as much as the size of your input.
+  - 3d O(n) and Ω(n log n) meaning it dominates n runtime, and is dominated by n log n runtimes, it is somewhere in the middle of these.
 
-  - 3e O(log n) for both work and span as these processes could be performed in parallel with less time needed (?)
+  - 3e O(n log n) for both work and span as these processes would now introduce additional overhead to implement (??)
