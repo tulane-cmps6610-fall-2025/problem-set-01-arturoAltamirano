@@ -39,11 +39,11 @@ Place all written answers from `assignment-01.md` here for easier grading.
 
 2. **SPARC to Python**
 
-  - 2b Ultimate output is the greatest value between the 2 inputs. 
+  - 2b Ultimate output is the greatest value between the 2 inputs. The procedural steps are:
 
          1) At the start of each invocation, if either input is equivalent to 0, return the counterpart input among the pair of (a, b) - evaluating them in the order of input a, then input b.  
 
-          2) Else if neither input is 0, assign the lesser value to variable x, and the greater to variable y.
+         2) Else if neither input is 0, assign the lesser value to variable x, and the greater to variable y.
        
          3) Pass (x,y) to a recursive invocation of Foo (step 1 - self), with variable a mapped to variable y, and variable b mapped to the result of variable y mod variable x. 
 
