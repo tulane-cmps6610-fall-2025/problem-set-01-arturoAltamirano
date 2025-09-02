@@ -14,7 +14,7 @@ Place all written answers from `assignment-01.md` here for easier grading.
 
           The base 2 value in 2 ^ (2 ^ n) will always make this algorithm less efficient than simply 2 ^ n so it will almost unanimously dominate the other. 
 
-  - 1c    c = 5, n = 1, true for all n > 0
+  - 1c    False, c = 5, n = 1, true for all n > 1
 
           Because logarithmic time is always dominated by polynomial time
           log is O(polynomial time)
@@ -24,11 +24,11 @@ Place all written answers from `assignment-01.md` here for easier grading.
           Because logarithmic time is always dominated by polynomial time
           log is O(polynomial time)
 
-  - 1e    c = 9, n = 81, true for all n >= 81
+  - 1e    True, c = 9, n = 81, true for all n >= 81
 
-  - 1f    True, at c = 2 for all n >= 81
+  - 1f    False, at c = 2 for all n >= 81
   
-          sqrt(n) will always be at least (log ^ 3 n) runtime and can be said to be of omega order.
+          This sqrt will be dominated by this particular logarithmic operation. 
 
   - 1g    There exists no values where o(g(n)) ∩ ω(g(n)) since a given n
           cannot be both greater and lesser than c and hold the inequality of g(n) ≤ c ·f(n) or g(n) >= c ·f(n)
@@ -46,13 +46,15 @@ Place all written answers from `assignment-01.md` here for easier grading.
        
          3) Pass (x,y) to a recursive invocation of Foo (step 1 - self), with variable a mapped to variable y, and variable b mapped to the result of variable y mod variable x. 
 
-  - 2c O(n log n) seems to be the upper bound for both work and span (see testingSolutions)
-        O(log n) ^ 2 seems to be a safer answer. As n log n seems to be close to equivalent.
+         4) Ultimately the final output is the greatest value between the 2 inputs.
+
+  - 2c O(log n) seems to be the upper bound for both work and span (see testingSolutions)
+          O(log n) ^ 2 seems to be a safer answer. As n log n seems to be close to equivalent.
 
 3. **Parallelism and recursion**
 
-  - 3b O(log n) ^ 2 as that is the nearest function it dominates, it is Ω(n log n)
+  - 3b O(n log n) as that is the nearest function it is dominated by.
 
-  - 3d O(n) and Ω(n log n) meaning it dominates n runtime, and is dominated by n log n runtimes, it is somewhere in the middle of these.
+  - 3d Ω(n) and O(n log n) meaning it dominates n runtime, and is dominated by n log n runtimes, it is somewhere in the middle of these.
 
-  - 3e O(n log n) for both work and span as these processes would now introduce additional overhead to implement (??)
+  - 3e O(log n) for both work and span as these processes would now remove the additional overhead of having to do the entire span of work for every time step.
