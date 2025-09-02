@@ -12,7 +12,7 @@ Place all written answers from `assignment-01.md` here for easier grading.
  
   - 1b    False, c = 2, n = 1, true for all n > 1
 
-          The base 2 value in 2 ^ (2 ^ n) will always make this algorithm less efficient than simply 2 ^ n so it will instead dominante the other. 
+          The base 2 value in 2 ^ (2 ^ n) will always make this algorithm less efficient than simply 2 ^ n so it will almost unanimously dominate the other. 
 
   - 1c    c = 5, n = 1, true for all n > 0
 
@@ -22,11 +22,11 @@ Place all written answers from `assignment-01.md` here for easier grading.
   - 1d    True, n ^ 1.01 = Ω(log ^ 2 n)
 
           Because logarithmic time is always dominated by polynomial time
-          log is O(polynomial time)
+          log is O(polynomial time) and polynomial time is Θ(logarithmic time)
 
   - 1e    c = 9, n = 81, true for all n >= 81
 
-  - 1f    True, at n >= 81 for c = 2 
+  - 1f    True, at c = 2 for all n >= 81
   
           sqrt(n) will always be at least (log ^ 3 n) runtime and can be said to be of omega order.
 
