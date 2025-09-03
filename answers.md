@@ -24,11 +24,11 @@ Place all written answers from `assignment-01.md` here for easier grading.
           Because logarithmic time is always dominated by polynomial time
           log is O(polynomial time)
 
-  - 1e    True, c = 9, n = 81, true for all n >= 81
+  - 1e    False, c = 9, n = 81, true for all n >= 81
 
-  - 1f    False, at c = 2 for all n >= 81
+  - 1f    True, at c = 2 for all n >= 81
   
-          This sqrt will be dominated by this particular logarithmic operation. 
+          We have established that any log grows slower than/is dominated by a polynomial, so for this problem and the previous, we can proof and assert accordingly.
 
   - 1g    There exists no values where o(g(n)) ∩ ω(g(n)) since a given n
           cannot be both greater and lesser than c and hold the inequality of g(n) ≤ c ·f(n) or g(n) >= c ·f(n). There is no overlap.
